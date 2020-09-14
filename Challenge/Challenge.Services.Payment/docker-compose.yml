@@ -1,0 +1,17 @@
+version: '3'
+services:
+  raven:
+    image: 'ravendb/ravendb:windows-nanoserver-latest'
+    expose:
+      - "8080"
+      - "8070"
+    ports:
+      - "8070:8080"
+  material:
+    container_name: material
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8060:8060"
+    image: material

@@ -1,0 +1,4 @@
+C:\Development\Test\checkout\Challenge\Challenge.Services.Payment.Test\obj\Debug\netcoreapp3.1\Challenge.Services.Payment.Test.csprojAssemblyReference.cache
+C:\Development\Test\checkout\Challenge\Challenge.Services.Payment.Test\obj\Debug\netcoreapp3.1\Challenge.Services.Payment.Test.AssemblyInfoInputs.cache
+C:\Development\Test\checkout\Challenge\Challenge.Services.Payment.Test\obj\Debug\netcoreapp3.1\Challenge.Services.Payment.Test.AssemblyInfo.cs
+C:\Development\Test\checkout\Challenge\Challenge.Services.Payment.Test\obj\Debug\netcoreapp3.1\Challenge.Services.Payment.Test.csproj.CoreCompileInputs.cache
