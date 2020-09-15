@@ -1,5 +1,5 @@
 
-# checkout material test microservice
+# checkout payment test microservice
 
 this source code is only a test project for a software developer position
 
