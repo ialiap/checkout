@@ -1,16 +1,8 @@
 ﻿using System.Net;
 using System.Threading.Tasks;
-using Akka.Actor;
-using Challenge.Services.Payment.Actor;
-using Challenge.Services.Payment.Command;
 using Challenge.Services.Payment.Model.Request;
 using Challenge.Services.Payment.Model.Response;
-using Challenge.Services.Payment.Service;
-using Challenge.Services.Payment.Service.Implementation;
 using Challenge.Services.Payment.Service.Protocol;
-using LUM.Services.Material.Command;
-using LUM.Services.Material.Model.Query;
-using LUM.Services.Material.Model.Request;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Annotations;
@@ -52,7 +44,7 @@ namespace Challenge.Services.Payment.Controllers
         /// <returns>Create Payment Response </returns>
         [HttpPost]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-        [SwaggerResponse((int)HttpStatusCode.OK, Type = typeof(GetCreatePaymentResponseModel))]
+        [SwaggerResponse((int)HttpStatusCode.OK, Type = typeof(CreatePaymentResponseModel))]
         public async Task<IActionResult> Post([FromBody] CreatePaymentBindingModel requestModel)
         {
             return Ok(await _paymentService.ProcessPayment(requestModel));

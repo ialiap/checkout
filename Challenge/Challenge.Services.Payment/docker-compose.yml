@@ -1,17 +1,27 @@
 version: '3'
 services:
   raven:
+    container_name: raven
     image: 'ravendb/ravendb:windows-nanoserver-latest'
     expose:
       - "8080"
       - "8070"
     ports:
-      - "8070:8080"
-  material:
-    container_name: material
+      - 8080:8080
+      - 38888:38888
+    environment:
+      - "RAVEN_Security_UnsecuredAccessAllowed=PublicNetwork"
+      - "RAVEN_Setup_Mode=None"
+      - "RAVEN_License_Eula_Accepted=true"
+      - "RAVEN_ServerUrl=http://0.0.0.0:8080"
+      - "RAVEN_PublicServerUrl=http://raven:8080"
+      - "RAVEN_ServerUrl_Tcp=tcp://0.0.0.0:38888"
+      - "RAVEN_PublicServerUrl_Tcp=tcp://raven:38888"
+  payment:
+    container_name: payment
     build:
       context: .
       dockerfile: Dockerfile
     ports:
       - "8060:8060"
-    image: material
+    image: payment

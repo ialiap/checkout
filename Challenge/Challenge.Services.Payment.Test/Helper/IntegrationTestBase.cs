@@ -1,7 +1,9 @@
 ﻿using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Challenge.Services.Payment.Model.Response;
 using Microsoft.AspNetCore.Mvc.Testing;
+using Newtonsoft.Json;
 
 namespace Challenge.Services.Payment.Test.Helper
 {
@@ -13,7 +15,7 @@ namespace Challenge.Services.Payment.Test.Helper
         {
             var appFactory = new WebApplicationFactory<Startup>()
                 .WithWebHostBuilder(builder =>
-                {
+                {   
                     builder.ConfigureServices(services =>
                     {
                         
@@ -24,10 +26,11 @@ namespace Challenge.Services.Payment.Test.Helper
         }
 
 
-        protected async Task<string> PostAsync<TRequest>(TRequest request,string url)
+        protected async Task<CreatePaymentResponseModel> PostAsync<TRequest>(TRequest request,string url)
         {
             var response = await TestClient.PostAsJsonAsync(url, request);
-            return await response.Content.ReadAsStringAsync();
+            var result =  await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<CreatePaymentResponseModel>(result);
         }
         protected async Task<TResponse> GetAsync<TResponse>(string url)
         {

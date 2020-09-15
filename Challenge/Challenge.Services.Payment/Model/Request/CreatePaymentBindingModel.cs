@@ -8,6 +8,7 @@ namespace Challenge.Services.Payment.Model.Request
     public class CreatePaymentBindingModel : BindingModel<CreatePaymentBindingModel, CreateMaterialBindingModelValidator>
     {
         public string MerchantId { get; set; }
+        public string CardNumber { get; set; }
         public decimal Amount { get; set; }
         public Currency Currency { get; set; }
         public int CVV { get; set; }

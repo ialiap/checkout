@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Challenge.Services.Payment", "D:\\Development\\Project\\Challenge\\checkout\\Challenge\\Challenge.Services.Payment", "Challenge.Services.Payment.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Challenge.Services.Payment.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

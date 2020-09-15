@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Development\\Test\\checkout\\Challenge\\Challenge.Services.Payment\\Challenge.Services.Payment.csproj": {}
+    "D:\\Development\\Project\\Challenge\\checkout\\Challenge\\Challenge.Services.Payment\\Challenge.Services.Payment.csproj": {}
   },
   "projects": {
-    "C:\\Development\\Test\\checkout\\Challenge\\Challenge.Services.Payment\\Challenge.Services.Payment.csproj": {
+    "D:\\Development\\Project\\Challenge\\checkout\\Challenge\\Challenge.Services.Payment\\Challenge.Services.Payment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Development\\Test\\checkout\\Challenge\\Challenge.Services.Payment\\Challenge.Services.Payment.csproj",
+        "projectUniqueName": "D:\\Development\\Project\\Challenge\\checkout\\Challenge\\Challenge.Services.Payment\\Challenge.Services.Payment.csproj",
         "projectName": "Challenge.Services.Payment",
-        "projectPath": "C:\\Development\\Test\\checkout\\Challenge\\Challenge.Services.Payment\\Challenge.Services.Payment.csproj",
-        "packagesPath": "C:\\Users\\ali.alipour\\.nuget\\packages\\",
-        "outputPath": "C:\\Development\\Test\\checkout\\Challenge\\Challenge.Services.Payment\\obj\\",
+        "projectPath": "D:\\Development\\Project\\Challenge\\checkout\\Challenge\\Challenge.Services.Payment\\Challenge.Services.Payment.csproj",
+        "packagesPath": "C:\\Users\\Leo\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\Project\\Challenge\\checkout\\Challenge\\Challenge.Services.Payment\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ali.alipour\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Leo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -41,9 +43,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "Akka": {
+            "AutoFixture": {
               "target": "Package",
-              "version": "[1.4.8, )"
+              "version": "[4.13.0, )"
             },
             "AutoMapper": {
               "target": "Package",
@@ -104,7 +106,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

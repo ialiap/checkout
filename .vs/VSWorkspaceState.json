@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Challenge"
+    "\\Challenge",
+    "\\Challenge\\Challenge.Services.Payment"
   ],
+  "SelectedNode": "\\Challenge\\Challenge.Services.Payment\\Startup.cs",
   "PreviewInSolutionExplorer": false
 }

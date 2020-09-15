@@ -5,9 +5,9 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\ali.alipour\.nuget\packages\;C:\Program Files\dotnet\sdk\NuGetFallbackFolder</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Leo\.nuget\packages\;C:\Microsoft\Xamarin\NuGet\;C:\Program Files\dotnet\sdk\NuGetFallbackFolder</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.6.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.5.0</NuGetToolVersion>
   </PropertyGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -19,7 +19,7 @@
     <Import Project="$(NuGetPackageRoot)xunit.core\2.4.0\build\xunit.core.props" Condition="Exists('$(NuGetPackageRoot)xunit.core\2.4.0\build\xunit.core.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\ali.alipour\.nuget\packages\xunit.analyzers\0.10.0</Pkgxunit_analyzers>
-    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\ali.alipour\.nuget\packages\microsoft.extensions.apidescription.server\3.0.0</PkgMicrosoft_Extensions_ApiDescription_Server>
+    <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\Leo\.nuget\packages\xunit.analyzers\0.10.0</Pkgxunit_analyzers>
+    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\Leo\.nuget\packages\microsoft.extensions.apidescription.server\3.0.0</PkgMicrosoft_Extensions_ApiDescription_Server>
   </PropertyGroup>
 </Project>

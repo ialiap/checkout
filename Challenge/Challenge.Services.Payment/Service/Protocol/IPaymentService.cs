@@ -6,7 +6,7 @@ namespace Challenge.Services.Payment.Service.Protocol
 {
     public interface IPaymentService
     {
-        Task<GetCreatePaymentResponseModel> ProcessPayment(CreatePaymentBindingModel requestModel);
+        Task<CreatePaymentResponseModel> ProcessPayment(CreatePaymentBindingModel requestModel);
 
         Task<GetPaymentResponseModel> GetByTrackingId(string trackingId);
 

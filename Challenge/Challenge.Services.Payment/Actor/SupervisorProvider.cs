@@ -1,8 +1,8 @@
-﻿using Akka.Actor;
+﻿//using Akka.Actor;
 
-namespace Challenge.Services.Payment.Actor
-{
+//namespace Challenge.Services.Payment.Actor
+//{
 
-    public delegate IActorRef PaymentSupervisorProvider();
+//    public delegate IActorRef PaymentSupervisorProvider();
 
-}
+//}

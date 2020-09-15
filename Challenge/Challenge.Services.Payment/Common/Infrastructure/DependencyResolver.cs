@@ -1,17 +1,13 @@
 ﻿using System;
-using Akka.Actor;
 using AutoMapper;
-using Challenge.Services.Payment.Actor;
 using Challenge.Services.Payment.Mapper;
 using Challenge.Services.Payment.Repository;
-using Challenge.Services.Payment.Service;
 using Challenge.Services.Payment.Service.Implementation;
 using Challenge.Services.Payment.Service.Protocol;
 using LUM.Services.Material.Common.Persistence;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Raven.Client.Documents;
-using Raven.Client.Documents.Indexes;
 
 namespace Challenge.Services.Payment.Common.Infrastructure
 {
@@ -30,13 +26,13 @@ namespace Challenge.Services.Payment.Common.Infrastructure
                         Conventions = { }
                     }.Initialize();
                     (new DatabaseInitializer().EnsureDatabaseExistsAsync(store, setting.Database.Name)).GetAwaiter().GetResult();
-                    IndexCreation.CreateIndexes(typeof(MaterialSearchByNameIndex).Assembly, store);
+                    //IndexCreation.CreateIndexes(typeof(MaterialSearchByNameIndex).Assembly, store);
                     return store;
                 }
             );
 
             services.AddTransient<PaymentRepository>();
-            services.AddTransient<IPaymentService, IPaymentService>();
+            services.AddTransient<IPaymentService, PaymentService>();
             services.AddTransient<IBankService, InMemoryBankService>();
             services.AddSwaggerGen(c =>
             {

@@ -4,7 +4,13 @@ namespace Challenge.Services.Payment.Type
 {
     public struct CardExpirationDate
     {
-        public MonthOfYear Month;
-        public int Year;
+        public CardExpirationDate(MonthOfYear monthOfYear ,int year)
+        {
+            this.Month = monthOfYear;
+            this.Year = year;
+        }
+        public MonthOfYear Month { get; set; }
+        public int Year { get; set; }
+
     }
 }
